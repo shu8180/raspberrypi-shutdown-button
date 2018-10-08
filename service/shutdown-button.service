@@ -1,0 +1,9 @@
+[Unit]
+Description=Shutdown Button service
+
+[Service]
+WorkingDirectory=/home/pi/raspberrypi-shutdown-button
+ExecStart=/usr/bin/python /home/pi/raspberrypi-shutdown-button/shutdown-button.py
+
+[Install]
+WantedBy = multi-user.target
